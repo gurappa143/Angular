@@ -1,0 +1,22 @@
+h3{
+    position: relative;
+    left: 5%;
+    padding-left: 20%;
+    color: burlywood;
+}
+h5{
+    position: relative;
+    left: 0%;
+    padding-left: 50%;
+    color: cadetblue;
+}
+h2{
+    color: red;
+}
+header{
+    background-image: url("OIP.jpg");
+}
+div{
+    background-color: black;
+    color:  black;
+}

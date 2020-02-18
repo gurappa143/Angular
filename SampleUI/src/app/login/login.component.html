@@ -1,0 +1,14 @@
+<img src="IMG_2019.jpg"  width="42" height="42" />
+<div class="container"> 
+UserName: <input type="text" name="usrId" [(ngModel)] = name/>
+Password: <input type="password" name="pwd" [(ngModel)] = pwd/>
+<button (click) = handleLogin() class="btn btn-success">submit</button>
+<div class="alert alert-warning" *ngIf = "isInvalid">{{errorMessage}}</div>
+  <h1>Checking</h1>
+  <p>Names:</p>
+  <ul>
+    <li *ngFor="let name of Employees">
+      {{ name }}
+    </li>
+  </ul>
+</div>
