@@ -1,5 +1,8 @@
 package com.example.demo.controller;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.Vo;
 import com.example.demo.entity.User;
 import com.example.demo.repository.UserDAO;
 
@@ -39,5 +43,11 @@ public class UserController {
 	@RequestMapping("/delete")
 	public int deleteById() {
 		return userDAO.deleteById();
+	}
+	
+	@RequestMapping("/pid")
+	public ArrayList<Vo> pid() {
+		return userDAO.pidList();
+		
 	}
 }
